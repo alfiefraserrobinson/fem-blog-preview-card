@@ -12,7 +12,7 @@
   --black: hsl(0, 0%, 7%);
   
   /*FONT FAMILIES*/
-  --ff: "Outfit", sans-serif;
+  --ff: "Figtree", sans-serif;
 
   /*FONT WEIGHTS*/
   --fw-regular: 500;
@@ -60,3 +60,101 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+
+}
+/* main */
+
+html, body {
+  display: flex;
+  height: 100%;
+  width: 1440px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: var(--ff);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 24px;
+  width: 384px;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  background: var(--white);
+  box-shadow: 8px 8px 0px 0px #000;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  margin-top: 12px;
+  border-radius: 4px;
+  background: var(--yellow);
+}
+
+.banner-text {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-bold);
+  
+}
+
+.publish-date {
+  color: var(--black);
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  line-height: 150%;
+}
+
+h1 {
+  font-size: var(--fs-24);
+  font-style: normal;
+  font-weight: var(--fw-bold);
+  line-height: 150%;
+}
+
+.description {
+  color: var(--grey);
+  font-size: var(--fs-16);
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  line-height: 150%;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-text {
+  color: var(--black);
+  font-size: var(--fs-14);
+  font-style: normal;
+  font-weight: var(--fw-bold);
+  line-height: 150%;
+}
