@@ -1,0 +1,62 @@
+/* variables*/
+
+:root {
+  
+  /*COLORS*/
+        /*PRIMARY*/
+  --yellow: hsl(47, 88%, 63%);
+  
+        /*NEUTRAL*/
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  
+  /*FONT FAMILIES*/
+  --ff: "Outfit", sans-serif;
+
+  /*FONT WEIGHTS*/
+  --fw-regular: 500;
+  --fw-bold: 800;
+
+  /*FONT SIZES*/
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  
+  
+}
+
+/* reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
