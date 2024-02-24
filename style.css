@@ -65,13 +65,12 @@ p, h1, h2, h3, h4, h5, h6 {
 /* main */
 
 html, body {
-  display: flex;
   height: 100%;
-  width: 1440px;
+  margin: 0 auto;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
 }
 
 body {
@@ -169,3 +168,33 @@ img {
   line-height: 150%;
 }
 
+/* media query*/
+@media screen and (max-width: 375px) {
+  html, body {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 155px 24px 156px 24px;
+  }
+
+  .container {
+    width: 327px;
+    box-shadow: 8px 8px 0px 0px var(--black);
+  }
+
+  .banner-text {
+    font-size: var(--fs-12);
+  }
+
+  h1 {
+    font-size: var(--fs-20);
+  }
+
+  .description {
+    font-size: var(--fs-14);
+  }
+}
