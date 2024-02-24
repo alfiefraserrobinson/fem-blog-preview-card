@@ -71,6 +71,7 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: auto;
 }
 
 body {
@@ -90,6 +91,10 @@ body {
   border: 1px solid var(--black);
   background: var(--white);
   box-shadow: 8px 8px 0px 0px #000;
+}
+
+.container:hover {
+  box-shadow: 16px 16px 0px 0px #000;
 }
 
 .content {
@@ -132,6 +137,11 @@ h1 {
   line-height: 150%;
 }
 
+h1:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
 .description {
   color: var(--grey);
   font-size: var(--fs-16);
@@ -158,3 +168,4 @@ img {
   font-weight: var(--fw-bold);
   line-height: 150%;
 }
+
